@@ -48,7 +48,6 @@ uint64_t idx2no30_armtc(uint64_t idx)
 {
     uint64_t k = idx / 8;   uint64_t i = idx % 8;
     return 4 * (i + (i / 6)) + 7 - 2 * ((i / 2) + (i / 7)) + 30 * k;
-    //return 4 * i + 7 - 2 * (i / 2) + 4 * (i / 6) - 2 * (i / 7) + 30 * k;
 }
 uint64_t idx2no30_logic(uint64_t idx)
 {
